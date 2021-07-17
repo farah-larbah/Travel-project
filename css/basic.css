@@ -1,0 +1,230 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.topnav {
+  background: rgba(255, 255, 255, 0);
+  /* No scrollbars */
+  overflow: hidden;
+}
+
+/* Style the links inside the nav bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: #04566e;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*end of nav bar section*/
+
+/*hero image section*/
+.hero-image {
+  /* main image*/
+  background-image: url('/project/images/page2-img1.jpg');
+  color: white;
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*main text  section*/
+.main-text {
+  text-align: center;
+  padding: 3%;
+
+}
+.main-text h1 b{
+  font-family:'Dancing Script'; 
+  font-size: 3rem; 
+}
+.main-text p {
+  font-size: 3vh;
+  padding: 0 4%;
+}
+
+/*main(cards) section*/
+.tour .container {
+  width: 85vw;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.normal-text {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.normal-para {
+  color: #000;
+  font-weight: 300;
+  opacity: 0.8;
+  justify-items: center;
+}
+.tour {
+  background-color: #fff;
+}
+.card-s4 {
+  background: #fff;
+  border: 0.05rem solid #d9d9d9;
+  margin: 2rem 0;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.tour img {
+  display: block;
+  width: 100%;
+}
+
+.card-s4 .card-body {
+  padding: 1rem;
+}
+
+.card-footer {
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tour-place {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tour-wrapper {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  /*repeat() function represents a repeated fragment of the track list, allowing a large number of columns or rows that show a repeated pattern to be written in a more compact form.*/
+  .tour-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tour-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /*make the text in the main text section responsev in the big screen */
+  .main-text p {
+    font-size: 3vh;
+    padding: 0 15%;
+  }
+}
+
+/*styling the button*/
+button {
+  border: 2px solid #022831;
+  background-color: #022831;
+  color: white;
+  padding: 8px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+
+/*footer style*/
+.footer {
+  margin-top: 5%;
+  background-color: #022831;
+  color: #fff;
+}
+.footer-wrapper {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.footer-wrapper ul {
+  list-style-type: none;
+}
+.footer-div {
+  margin: 1rem;
+}
+.footer .normal-para,
+.social-icons a,
+.footer-links a {
+  color: #fff;
+}
+
+.social-icons {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  display: inline;
+}
+.social-icons span {
+  padding: 10px;
+}
+.social-icons span:hover {
+  background-color: #66c6db;
+}
+
+.footer-div .normal-title {
+  margin-bottom: 2.5rem;
+  text-decoration: underline;
+}
+.footer-links li {
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+.footer-links a {
+  font-weight: 300;
+  opacity: 0.8;
+}
+.footer-links a:hover {
+  color: #66c6db;
+  opacity: 1;
+}
+.copyright-text {
+  text-align: center;
+  padding: 1%;
+}
+

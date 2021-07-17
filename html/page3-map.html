@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Map</title>
+    
+    <link rel="stylesheet" href="/project/css/basic.css">
+    <!--to add the icon-->
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <!--to add font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+ 
+  img{
+    display: block;
+    margin: 15px auto;
+   
+  }
+  .map{
+      background-color: rgb(104, 147, 104,0.8);;
+  }
+    </style>
+</head>
+<body>
+    <div>
+ <!-- Navbar -->
+ <nav class="navbar">
+
+
+    <div class="topnav" id="myTopnav">
+        <a href="/project/index.php" class="active"><b>Home</b></a>
+        <a href="/project/html/page2.html"><b>Discover</b></a>
+        <a href="/project/html/page3-map.html"><b>Map</b></a>
+        <a href="/project/story.php"><b>Stories</b></a>
+        <a href="/project/contact.php"><b>Contact</b></a>
+       <!--class="icon" is used to open and close the topnav on small screens-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars" aria-hidden="true" style="font-size:24px"></i>
+        </a>
+    </div>
+</nav>
+
+</div> 
+<div class="map" >
+<div class="main-text" >
+    <h1><b>MAP OF THE WORLD</b></h1>
+    <p>A map is a symbolic depiction emphasizing relationships between elements of some space, such as objects, regions, or themes.
+
+        Many maps are static, fixed to paper or some other durable medium, while others are dynamic or interactive. Although most commonly used to depict geography, maps may represent any space, real or fictional, without regard to context or scale, such as in brain mapping, DNA mapping, or computer network topology mapping.</p>
+</div>
+   
+    <img src="/project/images/map.jpg" alt="map" usemap="#worldmap">
+
+    <map name="worldmap">
+        <area shape="circle" coords="623,444,30" alt="libya" href="/project/html/map-marker.html">
+        <area shape="circle" coords="548,393,10" alt="spain" href="/project/html/map-marker.html"> 
+        <area shape="circle" coords="871,284,60" alt="Russia" href="/project/html/map-marker.html">
+        <area shape="circle" coords="606,388,30" alt="Italy" href="/project/html/map-marker.html">
+        <area shape="circle" coords="240,397,60" alt="us" href="/project/html/map-marker.html">
+        <area shape="circle" coords="1020,416,30" alt="Japan" href="/project/html/map-marker.html">
+        <area shape="circle" coords="640,649,10" alt="South Africa " href="/project/html/map-marker.html">
+      </map>
+
+      <footer class = "footer ">
+    
+        <div class = "footer-wrapper">
+            <div class = "footer-div ">
+                <h2 class = "normal-title">Information</h2>
+                <ul class = "footer-links">
+                    <li><a href = "/project/html/page3-map.html">Map</a></li>
+                    <li><a href = "/project/index.php">About</a></li>
+                    <li><a href = "/project/story.php">travellers stories</a></li>
+                    <li><a href = "#">Privacy and Policy</a></li>
+                </ul>
+            </div>
+
+            <div class = "footer-div">
+                <h2 class = "normal-title">Continents</h2>
+                <ul class = "footer-links">
+                    <li><a href = "/project/html/page2-aisa.html">Asia</a></li>
+                    <li><a href = "/project/html/page2.html">Europe</a></li>
+                    <li><a href = "/project/html/page2-africa.html">africa</a></li>
+                </ul>
+            </div>
+            <div class = "footer-div">
+                <h2 class = "normal-title">important links</h2>
+                <ul class = "footer-links">
+                    <li><a href = "https://www.wego.ae/en/hotels">Hotel Booking</a></li>
+                    <li><a href = "https://www.wego.ae/en/flights">flight booking</a></li>
+                    <li><a href = "https://www.wego.ae/en/activities">activities</a></li>
+                  
+                </ul>
+            </div>
+           
+          
+        </div>
+        
+        <div class = "copyright-text">
+            <div class = "social-icons">
+                <a href = "https://twitter.com">
+                    <span><i class = "fab fa-twitter" target="_blank"></i></span>
+                </a>
+                <a href = "https://www.facebook.com">
+                    <span><i class = "fab fa-facebook" target="_blank"></i></span>
+                </a>
+                <a href = "https://www.instagram.com">
+                    <span><i class = "fab fa-instagram" target="_blank"></i></span>
+                </a>
+            </div>
+            <p>Copyright &copy; 2021 All rights reserved | This template is made by Farah Larbah</p>
+        </div>
+    
+</footer>
+<!-- end of footer -->
+<script src="/project/js/script.js">
+</script> 
+</body>
+</html>

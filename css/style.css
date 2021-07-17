@@ -1,0 +1,482 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+#topbtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(104, 147, 104);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#topbtn:hover {
+  background-color: red;
+}
+
+.topnav {
+  background-color: rgb(2, 40, 49, 0.8);
+}
+
+/* Style the links inside the nav bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #022831;
+  color: #fff;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* ------section1----------------------------------------------------------------------------------------------------------------*/
+/* main image section */
+.hero-image {
+  /* main image*/
+  background-image: url('/project/images/hero-image1.jpg');
+  /*to position the nav over the image*/
+  position: relative;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  padding-bottom: 0.52em;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  font-size: 3rem;
+  /*to make the text in center*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-text button {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  font-size: 1.5rem;
+  /*to make the text in center*/
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 3px solid #022831;
+}
+.hero-text button:hover {
+  background-color: #022831;
+  color: white;
+}
+/*styling the button*/
+button {
+  border: 2px solid #022831;
+  background-color: #022831;
+  color: white;
+  padding: 8px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+/* ------section2----------------------------------------------------------------------------------------------------------------*/
+/* about and card section */
+
+.about {
+  text-align: center;
+  padding: 3%;
+}
+.about p {
+  justify-content: center;
+  font-size: 2.5vh;
+}
+
+.first-hr {
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+.card-container {
+  padding: 20px 30px;
+  margin-bottom: 3%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
+
+  padding: 0.5rem;
+  text-align: center;
+  margin: 10px;
+}
+
+.card .card-body {
+  padding: 0;
+  margin: 0;
+}
+
+.card .card-title {
+  color: #04566e;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #04566e;
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: 93%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10px;
+  }
+}
+/* ------section3----------------------------------------------------------------------------------------------------------------*/
+/* video section */
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #ccc;
+}
+
+/* Caption text */
+.text a {
+  color: #fff;
+  font-size: 4rem;
+  font-size: 600;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* ------section4----------------------------------------------------------------------------------------------------------------*/
+/* tour section */
+.container {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.normal-text {
+  font-size: 1.1rem;
+  color: var(--lightGrey);
+  font-weight: 300;
+}
+.normal-para {
+  color: #000;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0.9rem;
+}
+.section-title span {
+  font-size: 3rem;
+  font-family: 'Dancing Script';
+  font-weight: bold;
+}
+
+.card-s4 {
+  border: 0.05rem solid #d9d9d9;
+  margin: 1rem 0;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tour img {
+  display: block;
+  width: 100%;
+}
+
+.card-s4 .card-body {
+  padding: 1rem;
+}
+
+.card-footer {
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tour-place {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tour-price {
+  color: var(--curiousBlue);
+  font-weight: 400;
+}
+.rating {
+  color: var(--lightRed);
+  font-size: 0.5rem;
+}
+.rating span {
+  margin-right: 0.7rem;
+}
+.rating-text {
+  font-weight: 300;
+}
+.tour-wrapper {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  /*repeat() function represents a repeated fragment of the track list, allowing a large number of columns or rows that show a repeated pattern to be written in a more compact form.*/
+  .tour-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+  }
+
+  .hero-text {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tour-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /*make the text in about section responsev in the big screen related to section2*/
+  .about p {
+    font-size: 3vh;
+    padding: 0 15%;
+  }
+  .hero-text {
+    font-size: 4rem;
+  }
+}
+
+/* ------section5----------------------------------------------------------------------------------------------------------------*/
+
+.facts {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(rgb(2, 40, 49, 0.8), rgb(2, 40, 49, 0.8)),
+    url('/project/images/section5pic-paries.jpg') center/cover no-repeat;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+.facts h2 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+.facts .normal-para {
+  color: #fff;
+}
+
+/* ------section6---------------------------------------------------------------------using the same design of section4-------------------------------------------*/
+
+/* ------section7 contact form----------------------------------------------------------------------------------------------------------------*/
+
+.contact-form {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(104, 147, 104);
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  padding: 5%;
+}
+
+.contact-form .input-box {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.send-btn {
+  color: #fff;
+  background-color: #022831;
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  width: 70%;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+.send-btn:hover {
+  border: 2px solid #022831;
+  background-color: transparent;
+  color: #022831;
+  font-weight: 600;
+}
+
+/* ------footer----------------------------------------------------------------------------------------------------------------*/
+
+.footer {
+  margin-top: 5%;
+  background-color: #022831;
+  color: #fff;
+}
+.footer-wrapper {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.footer-wrapper ul {
+  list-style-type: none;
+}
+.footer-div {
+  margin: 1rem;
+}
+
+.footer .normal-para,
+.social-icons a,
+.footer-links a {
+  color: #fff;
+}
+
+.social-icons {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  display: inline;
+}
+.social-icons span {
+  padding: 10px;
+}
+.social-icons span:hover {
+  background-color: #66c6db;
+}
+
+.footer-div .normal-title {
+  margin-bottom: 2.5rem;
+  text-decoration: underline;
+}
+.footer-links li {
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+.footer-links a {
+  font-weight: 300;
+  opacity: 0.8;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.copyright-text {
+  text-align: center;
+  padding: 1%;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

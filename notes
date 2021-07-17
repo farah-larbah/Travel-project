@@ -1,0 +1,28 @@
+- Murky Teal – #022831
+- Blue Lagoon – #04566E
+- Pastel Green – #689368
+- Green Pear – #B4D330
+- Blustery Blue – #D8DFE9
+
+
+The getElementsByClassName()
+ method returns a collection of all elements in the document with the specified class name, as an HTMLCollection object.
+The HTMLCollection object represents a collection of nodes. The nodes can be accessed by index numbers. The index starts at 0.
+Tip: You can use the length property of the HTMLCollection object to determine the number of elements with a specified class name, then you can loop through all elements and extract the info you want.
+
+
+Slideshow
+
+First, set the slideIndex to 1. (First picture)
+
+Then call showDivs() to display the first image.
+
+When the user clicks one of the buttons call plusDivs().
+
+The plusDivs() function subtracts one or  adds one to the slideIndex.
+
+The showDiv() function hides (display="none") all elements with the class name "mySlides", and displays (display="block") the element with the given slideIndex.
+
+If the slideIndex is higher than the number of elements (x.length), the slideIndex is set to zero.
+
+If the slideIndex is less than 1 it is set to number of elements (x.length).
